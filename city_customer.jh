@@ -1,0 +1,14 @@
+entity City {
+	name String required
+}
+
+entity Customer {
+	name String required
+    
+}
+paginate City with pagination
+paginate Customer with pagination
+
+relationship OneToMany {
+	City{name} to Customer
+}
